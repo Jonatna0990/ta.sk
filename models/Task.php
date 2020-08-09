@@ -15,13 +15,13 @@ class Task
     public static $STATUS_EDIT = 'edit';
     public static $STATUS_NEW = 'new';
 
-    public const SORT_BY_ID = 'id';
-    public const SORT_BY_NAME = 'user_name';
-    public const SORT_BY_EMAIL = 'email';
-    public const SORT_BY_STATUS = 'status';
+    const SORT_BY_ID = 'id';
+    const SORT_BY_NAME = 'user_name';
+    const SORT_BY_EMAIL = 'email';
+    const SORT_BY_STATUS = 'status';
 
-    public const SORT_ASC = 'ASC';
-    public const SORT_DESC = 'DESC';
+    const SORT_ASC = 'ASC';
+    const SORT_DESC = 'DESC';
 
 
     const SHOW_BY_DEFAULT = 3;

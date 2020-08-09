@@ -28,9 +28,6 @@
                                 <a href="admin/edit/<?=$item->id?>" class="border-0 btn-transition btn btn-outline-secondary">
                                     <i class="fa fa-pencil"></i>
                                 </a>
-                                <button class="border-0 btn-transition btn btn-outline-danger">
-                                    <i class="fa fa-trash"></i>
-                                </button>
                             </div>
                         </div>
                     </div>

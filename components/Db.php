@@ -18,13 +18,15 @@ class Db
             $paramsPath = $is_migration == false ? ROOT.'/config/db.php' : '../config/db.php';
 
             $params = include ($paramsPath);
-            $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
+            $dsn = "mysql:host={$params['host']};port={$params['port']};dbname={$params['dbname']}";
             $db = new PDO($dsn, $params['user'], $params['password'], array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             $db->exec('set names utf8');
             return $db;
         }
         catch(PDOException $ex){
-            return null;
+
+            var_dump($ex->getMessage());
+            die;
         }
 
     }

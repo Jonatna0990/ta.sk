@@ -5,7 +5,7 @@
  */
 class SiteController extends BaseController
 {
-    public const ITEMS_ON_PAGE = 3;
+     const ITEMS_ON_PAGE = 3;
 
     /**
      * Главная страница
